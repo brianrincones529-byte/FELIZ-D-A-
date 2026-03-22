@@ -1,30 +1,16 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: radial-gradient(circle, #1a1a2e 0%, #050505 100%);
-    color: white;
-    font-family: 'Helvetica', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.container {
-    text-align: center;
-    z-index: 10;
-}
-
 h1 {
-    font-size: 1.8rem;
+    font-family: 'Dancing Script', cursive; /* La fuente nueva */
+    font-size: 3.5rem; /* ¡Mucho más grande! */
     margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    color: #FFD700; /* Color amarillo para que combine */
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    padding: 0 10px;
 }
 
 #btn-crecer {
+    font-family: 'Dancing Script', cursive;
     padding: 15px 35px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     background: #FFD700;
     color: #000;
     border: none;
@@ -32,27 +18,4 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
-    transition: transform 0.2s;
-}
-
-#btn-crecer:active {
-    transform: scale(0.95);
-}
-
-.flower {
-    position: absolute;
-    font-size: 3rem;
-    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
-    animation: aparecer 1.2s ease-out forwards;
-}
-
-@keyframes aparecer {
-    from { 
-        transform: scale(0) rotate(-45deg) translateY(100px); 
-        opacity: 0; 
-    }
-    to { 
-        transform: scale(1) rotate(0deg) translateY(0); 
-        opacity: 1; 
-    }
 }
