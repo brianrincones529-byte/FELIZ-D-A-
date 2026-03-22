@@ -1,21 +1,37 @@
-h1 {
-    font-family: 'Dancing Script', cursive; /* La fuente nueva */
-    font-size: 3.5rem; /* ¡Mucho más grande! */
-    margin-bottom: 20px;
-    color: #FFD700; /* Color amarillo para que combine */
-    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
-    padding: 0 10px;
+body {
+    margin: 0;
+    background: #0a0a0a; /* Fondo oscuro elegante */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
+.container { text-align: center; }
+
 #btn-crecer {
-    font-family: 'Dancing Script', cursive;
-    padding: 15px 35px;
-    font-size: 1.5rem;
-    background: #FFD700;
-    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #ffd700;
     border: none;
     border-radius: 50px;
-    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    transition: 0.3s;
 }
+
+.flower {
+    font-size: 3rem;
+    position: absolute;
+    animation: aparecer 1s ease-out forwards;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0) translateY(100px); opacity: 0; }
+    to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.hidden { display: none; }
